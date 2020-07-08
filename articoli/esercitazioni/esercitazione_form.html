@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+        <title>Esercitazione form</title>
+        <meta charset="UTF-8">
+	</head>
+	<body>
+        <form action="/action-page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <fieldset>
+                <legend>Dati personali</legend>
+                <!-- Nome e cognome (input text) -->
+                <p>Nome e cognome</p>
+                <label for="fname">Nome:</label><br>
+                <input type="text" id="fname" name="nome" placeholder="Nome"><br>
+                <label for="lname">Cognome:</label><br>
+                <input type="text" id="lname" name="cognome"><br>
+                <!--- Genere (input radio button) -->
+                <p>Genere</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Uomo</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="male">Donna</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="male">Altro</label>
+            </fieldset>
+            <fieldset>
+                <legend>Preferenze</legend>
+                <!-- Auto preferita (select) -->
+                <p>Dicci la marca di auto preferita</p>
+                <select id="marca_auto" name="marca_auto" size="4" multiple>
+                    <option value="0">Seleziona la tua marca preferita</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="audi">Audi</option>
+                    <option value="fiat" selected>Fiat</option>
+                    <option value="bmw">BMW</option>
+                    <option value="ferrari">Ferrari</option>
+                    <option value="maserati">Maserati</option>
+                </select><br><br>
+                <!-- sezione ferrarista (button) -->
+                <button type="button" onclick="alert('Forza Ferrari!')">Se hai scelto Ferrari clicca qui</button>
+                <!-- modello ferrari -->
+                <p>Seleziona il tuo modello di Ferrari preferita</p>
+                <input list="modelli_ferrari" name="modello_ferrari">
+                <datalist id="modelli_ferrari">
+                    <option value="La Ferrari">
+                    <option value="488 GT">
+                    <option value="Roma">
+                    <option value="Portofino">
+                    <option value="Monza">
+                    <option value="SF90">
+                </datalist>
+                <!-- Commento (text area) -->
+                <p>Lasciaci il tuo commento</p>
+                <textarea name="commento" rows="4">Scrivi qui il tuo commento</textarea><br>
+                <!-- (range) -->
+                <span>100 <input type="range" id="a" name="a" min="100" max="5000"> 5000</span>
+                <span>+ <input type="number" id="b" name="b" value="50"></span>
+                <output name="x" for="a b"></output><br><br>
+                <!-- bottone submit -->
+                <input type="submit" value="Invia">
+            </fieldset>
+        </form>    
+    </body>
+</html>
