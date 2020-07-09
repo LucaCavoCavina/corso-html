@@ -6,48 +6,21 @@
         <meta name="keyword" content="News, Blog, Marketing, Tecnologia">
         <meta name="description" content="Tutte le ultime novità del settore tecnologico e marketing">
         <meta name="author" content="Time2Marketing">
-        <meta http-equiv="refresh" content="30">
+        <!--<meta http-equiv="refresh" content="30">-->
+        <link rel="stylesheet" href="assets/css/main.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            .black{
-                background-color: black;
-                color: white;
-            }
-            .red{
-                background-color: darkred;
-                color:white;
-            }
-            .header{
-                text-align: center;
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-            .footer{
-                text-align: center;
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-            .breadcrumb{
-                padding-top:5px;
-                padding-bottom: 5px;
-            }
-            .tag{
-                background-color: grey;
-                padding: 10px;
-            }
-        </style>
 	</head>
 	<body>
         <!-- blocco menu -->
         <nav>        
             <div class="black menu">
-                <ul>
+                <ul class="menu__items">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Chi siamo</a></li>
                     <li><a href="#">Servizi</a></li>
                 </ul>
-                <a href="https://www.time2marketing.com/"><img src="img/logo-time2marketing.png" alt="logo time 2 marketing"></a>
-                <ul>
+                <a class="logo" href="https://www.time2marketing.com/"><img src="img/logo-time2marketing.png" alt="logo time 2 marketing"></a>
+                <ul class="menu__items">
                     <li><a href="#">Case history</a></li>
                     <li><a href="#">News</a></li>
                     <li><a href="#">Contatti</a></li>
@@ -62,61 +35,66 @@
         </header>
         <!-- blocco breadcrumb -->
         <div class="black breadcrumb">
-            <p>Home/ Novità</p>
-        </div>
-        <!-- blocco news -->
-        <div class="blocco_news">
-            <article>
-                <div id="news_1" class="news">
-                    <img src="img/immagine_mascherina_news.jpg" alt="donna con mascherina" width="500">
-                    <h2>Come scoprire un sorriso dietro la mascherina</h2>
-                    <p>9 giugno 2020 / By <a href="#">Giuliano Aluffi</a></p>
-                    <div>
-                        <p>I dispositivi di protezione in realtà non nascondono completamente la nostra espressività.</p>
-                        <p>
-                            La mascherina anti Coronavirus, coprendo buona parte del viso, ci rende assai meno riconoscibili ed è il motivo per cui il nuovo aggiornamento di <del cite="https://support.apple.com/it-it/HT210393" datetime="2019-06-29">iOS 13,5</del> <ins>iOS 13,6</ins> di
-                            Apple per l'iPhone ora permette di sbloccare il telefono senza dover aspettare che il riconoscimento facciale fallisca più volte.
-                        </p>
-                    </div>
-                    <span><a href="articoli/articolo6.html" title="Leggi la news Come scoprire un sorriso dietro la mascherina">Leggi la news</a></span>
-                </div>
-            </article>    
-            <hr>
-            <article>
-                <div id="news_2" class="news">
-                    <img src="img/immagine_mascherina_news.jpg" alt="donna con mascherina" width="500">
-                    <h2>Titolo</h2>
-                    <p>Data e autore</p>
-                    <p>pragrafo news</p>
-                </div>
-            </article>
-        </div>
-        <!-- blocco colonna dx -->
-        <aside>
-            <div class="colonna_dx">
-                <!-- lista articoli recenti -->
-                <div class="blocco_articoli">
-                    <h4>Articoli recenti:</h4>
-                    <ul>
-                        <li><a href="articolo1.html">Primo articolo di prova</a></li>
-                        <li><a href="articolo6.html">Come scoprire un sorriso dietro la mascherina</a></li>
-                        <li><a href="articolo3.html">Prove di tabelle e di link</a></li>
-                        <li><a href="articolo5.html">Prove di liste</a></li>
-                    </ul>
-                </div>
-                <div class="blocco_tags">
-                    <h4>Tags</h4>
-                    <span class="tag"><a href="#">analytics</a></span>
-                    <span class="tag"><a href="#">marketing</a></span>
-                    <span class="tag"><a href="#">marketing turistico</a></span>
-                    <span class="tag"><a href="#">formazione</a></span>
-                </div>
+            <div class="breadcrumb__content">
+                <p>Home/ Novità</p>
             </div>
-        </aside>   
+        </div>
+        <!-- blocco content largo massimo 960px -->
+        <div class="content">
+            <!-- blocco news -->
+            <div class="blocco_news">
+                <article>
+                    <div id="news_1" class="news">
+                        <img class="copertina" src="img/immagine_mascherina_news.jpg" alt="donna con mascherina">
+                        <h2>Come scoprire un sorriso dietro la mascherina</h2>
+                        <p>9 giugno 2020 / By <a href="#">Giuliano Aluffi</a></p>
+                        <div>
+                            <p>I dispositivi di protezione in realtà non nascondono completamente la nostra espressività.</p>
+                            <p>
+                                La mascherina anti Coronavirus, coprendo buona parte del viso, ci rende assai meno riconoscibili ed è il motivo per cui il nuovo aggiornamento di <del cite="https://support.apple.com/it-it/HT210393" datetime="2019-06-29">iOS 13,5</del> <ins>iOS 13,6</ins> di
+                                Apple per l'iPhone ora permette di sbloccare il telefono senza dover aspettare che il riconoscimento facciale fallisca più volte.
+                            </p>
+                        </div>
+                        <span><a href="articoli/articolo6.html" title="Leggi la news Come scoprire un sorriso dietro la mascherina">Leggi la news</a></span>
+                    </div>
+                </article>    
+                <hr>
+                <article>
+                    <div id="news_2" class="news">
+                        <img class="copertina" src="img/immagine_mascherina_news.jpg" alt="donna con mascherina">
+                        <h2>Titolo</h2>
+                        <p>Data e autore</p>
+                        <p>pragrafo news</p>
+                    </div>
+                </article>
+            </div>
+            <!-- blocco colonna dx -->
+            <aside>
+                <div class="colonna_dx">
+                    <!-- lista articoli recenti -->
+                    <div class="blocco_articoli">
+                        <h4>Articoli recenti:</h4>
+                        <ul>
+                            <li><a href="articolo1.html">Primo articolo di prova</a></li>
+                            <li><a href="articolo6.html">Come scoprire un sorriso dietro la mascherina</a></li>
+                            <li><a href="articolo3.html">Prove di tabelle e di link</a></li>
+                            <li><a href="articolo5.html">Prove di liste</a></li>
+                        </ul>
+                    </div>
+                    <div class="blocco_tags">
+                        <h4>Tags</h4>
+                        <span class="tag"><a href="#">analytics</a></span>
+                        <span class="tag"><a href="#">marketing</a></span>
+                        <span class="tag"><a href="#">marketing turistico</a></span>
+                        <span class="tag"><a href="#">formazione</a></span>
+                    </div>
+                </div>
+            </aside>
+        </div>
         <!-- blocco footer -->
         <footer>
             <div class="black footer">
-                <p>Sede legale: Via del Progresso, 30 - 35127 Padova Italy | Sede operativa: Via del Progresso, 30 - 35127 Padova Italy <span style="font-size: large;">Tel. + 39 049 8808289</span> - Fax + 39 049 8826581 P.IVA 03796490286 | Iscritta Ufficio imprese di Padova al numero 338317 Capitale versato: 10.000€ <a href="">Privacy</a></p>
+                <p>Sede legale: Via del Progresso, 30 - 35127 Padova Italy | Sede operativa: Via del Progresso, 30 - 35127 Padova Italy <span>Tel. + 39 049 8808289</span> - Fax + 39 049 8826581 P.IVA 03796490286 | Iscritta Ufficio imprese di Padova al numero 338317 Capitale versato: 10.000€ <a href="">Privacy</a></p>
             </div>
         </footer>
     </body>
