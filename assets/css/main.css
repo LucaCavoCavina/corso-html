@@ -68,6 +68,11 @@ nav .menu .menu__items, nav .menu .logo, .menu__items li {
     margin-top:50px;
 }
 
+.content-full-width {
+    width: 100%;
+    text-align: center;
+}
+
 .blocco_news {
     display:inline-block;
     width:70%;
@@ -99,4 +104,12 @@ aside {
 .tag{
     background-color: grey;
     padding: 10px;
+}
+
+.blocco_welcome{
+    padding: 30px 20%;
+}
+
+.blocco_video{
+    background-color: black;
 }
