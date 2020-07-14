@@ -1,0 +1,66 @@
+@media only screen and (min-width: 769px) {
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .burger_menu {
+        position:absolute;
+        left:5px;
+        top:10px;
+        display:block;
+    }
+
+    .burger_menu img {
+        width:30px;
+    }
+
+    .menu .logo img {
+        top:10px;
+    }
+
+    nav .menu .menu__items {
+        display:none;
+    }
+
+    .header {
+        padding-top:71px;
+    }
+
+    .breadcrumb {
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .content {
+        margin-top:0px;
+    }
+    
+    .blocco_news {
+        display:block;
+        width:100%;
+    }
+    aside {
+        display:block;
+        width:100%;
+        padding:10px;
+        background-color:#eee;
+        margin-top:10px;
+    }
+    .news__content {
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .footer {
+        padding:10px;
+        font-size:12px;
+    }
+    .black.footer span {
+        font-size:12px;
+    }
+  }
+

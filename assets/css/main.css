@@ -8,10 +8,12 @@ body {
     margin:0px;
     font-family: 'Raleway', sans-serif;
 }
+
 .black{
     background-color: black;
     color: white;
 }
+
 .red{
     background-color: darkred;
     color:white;
@@ -21,6 +23,10 @@ nav {
     position:fixed;
     top:0px;
     width:100%;
+}
+
+.burger_menu {
+    display:none;
 }
 
 nav .menu {
@@ -104,6 +110,17 @@ aside {
 .tag{
     background-color: grey;
     padding: 10px;
+    margin:5px;
+    display:inline-block;
+}
+
+.tag a {
+    text-decoration:none;
+    color:white;
+}
+
+.tag:hover {
+    background-color:darkred;
 }
 
 .blocco_welcome{
@@ -113,3 +130,4 @@ aside {
 .blocco_video{
     background-color: black;
 }
+
