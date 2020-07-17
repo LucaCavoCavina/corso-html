@@ -9,6 +9,7 @@
         <!--<meta http-equiv="refresh" content="30">-->
         <link rel="stylesheet" href="assets/css/main.css"/>
         <link rel="stylesheet" href="assets/css/mobile.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body class="novita">
@@ -88,6 +89,16 @@
             <!-- blocco colonna dx -->
             <aside>
                 <div class="colonna_dx">
+                    <!-- input ricerca -->
+                    <div class="blocco_ricerca">
+                        <form action="/action-page.php" method="GET">
+                            <div class="input-container">
+                                <input id="ricerca_news" type="search" name="ricerca" placeholder="Ricerca">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <input id="submit_news" type="submit" value="Cerca">
+                            </div>
+                        </form>
+                    </div>
                     <!-- lista articoli recenti -->
                     <div class="blocco_articoli">
                         <h4>Articoli recenti:</h4>

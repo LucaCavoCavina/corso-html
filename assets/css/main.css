@@ -131,3 +131,40 @@ aside {
     background-color: black;
 }
 
+.input-container{
+    display: flex;
+}
+
+.blocco_ricerca .fa{
+    color:#747474;
+    padding: 15px;
+    background-color: #f3f3f3;
+}
+
+#ricerca_news{
+    padding: 15px;
+    border: none;
+    background-color: #f3f3f3;
+    width:100%;
+}
+
+#ricerca_news:focus{
+    outline: none;
+}
+
+#submit_news{
+    display: none;
+}
+
+.servizio{
+    display: inline-block;
+    width: 25%;
+}
+
+.servizio .fa{
+    font-size: 30px;
+}
+
+.container_servizi{
+    margin-top: 20px;
+}

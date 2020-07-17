@@ -5,14 +5,14 @@
         <meta charset="UTF-8">
 	</head>
 	<body>
-        <form action="/action-page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <form action="/action-page.php" method="GET" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
             <fieldset>
                 <legend>Dati personali</legend>
                 <!-- Nome e cognome (input text) -->
                 <p>Nome e cognome</p>
-                <label for="fname">Nome:</label><br>
+                <label for="fname">Nome:</label>
                 <input type="text" id="fname" name="nome" placeholder="Nome"><br>
-                <label for="lname">Cognome:</label><br>
+                <label for="lname">Cognome:</label>
                 <input type="text" id="lname" name="cognome"><br>
                 <!--- Genere (input radio button) -->
                 <p>Genere</p>
@@ -22,12 +22,39 @@
                 <label for="male">Donna</label><br>
                 <input type="radio" id="other" name="gender" value="other">
                 <label for="male">Altro</label>
+                <!-- Titolo di studio (checkbox) -->
+                <p>Titolo di studio</p>
+                <input type="checkbox" id="elementare" name="titolo_studio" value="elementare">
+                <label for="elementare">Scuola elementare</label><br>
+                <input type="checkbox" id="media" name="titolo_studio" value="media">
+                <label for="elementare">Licenza media</label><br>
+                <input type="checkbox" id="superiore" name="titolo_studio" value="superiore">
+                <label for="elementare">Diploma scuola superiore</label><br>
+                <input type="checkbox" id="universita" name="titolo_studio" value="universita">
+                <label for="elementare">Laurea università</label><br>
+                <!-- Data nascita (input vari) -->
+                <label>Inserisci la tua data di nascita: </label><br>
+                <label>Giorno:</label>
+                <input name="giorno_nascita" type="number" size="2">
+                <label>Mese:</label>
+                <select name="mese_nascita">
+                    <option value="01">Gennaio</option>
+                    <option value="02">Febbraio</option>
+                    <option value="03">Marzo</option>
+                    <option value="04">Aprile</option>
+                    <option value="05">Maggio</option>
+                </select>
+                <label>Anno:</label>
+                <input name="anno_nascita" type="number" size="4"><br>
+                <!-- Data nascita (date) -->
+                <input type="date" name="data_nascita">
             </fieldset>
             <fieldset>
                 <legend>Preferenze</legend>
                 <!-- Auto preferita (select) -->
                 <p>Dicci la marca di auto preferita</p>
-                <select id="marca_auto" name="marca_auto" size="4" multiple>
+                <!--<select id="marca_auto" name="marca_auto" size="4" multiple>-->
+                    <select id="marca_auto" name="marca_auto" size="4" multiple>
                     <option value="0">Seleziona la tua marca preferita</option>
                     <option value="volvo">Volvo</option>
                     <option value="audi">Audi</option>

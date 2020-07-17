@@ -85,11 +85,11 @@
                     <div id="blocco_form">
                         <form action="/action_page.php">
                             <input type="text" name="nome_cognome" placeholder="Nome e Cognome (*)" required>
-                            <input type="text" name="azienda" placeholder="Azienda (*)"><br>
-                            <input type="email" name="email" placeholder="Email (*)">
-                            <input type="text" name="sito_web" placeholder="Sito Web (*)"><br>
+                            <input type="text" name="azienda" placeholder="Azienda (*)" required><br>
+                            <input type="email" name="email" placeholder="Email (*)" required>
+                            <input type="text" name="sito_web" placeholder="Sito Web (*)" required><br>
                             <textarea name="messaggio" rows="10" cols="50" placeholder="Il tuo messaggio"></textarea><br>
-                            <input type="checkbox" name="privacy" id="privacy" value="consenso_privacy">
+                            <input type="checkbox" name="privacy" id="privacy" value="consenso_privacy" required>
                             <label for="privacy">Ho letto l'<a href="#">informativa sulla Privacy</a> e do il mio consenso</label><br>
                             <input type="submit" value="Invia">
                         </form>
